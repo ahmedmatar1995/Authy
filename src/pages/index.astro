@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="w-full py-20">
+    <div class="w-full grid grid-cols-2 px-12">
+      <div class="w-full flex flex-col items-start">
+        <h2
+          class="text-4xl  text-primary-white font-extrabold capitalize dark:text-primary-gray"
+        >
+          lift your business to new <br /> heights with our digital <br />
+          <span class="text-red-500 motion-preset-confetti">marketing services</span>
+        </h2>
+        <p
+          id="text"
+          class="font-thick text-md mt-4 text-primary-white text-left dark:text-primary-dark"
+        >
+          we offer a comprehensive suite of digital services designed to elevate
+          your online presence and drive measurable results. Our expertise spans
+          web development, digital marketing, and data analytics, ensuring
+          seamless user experiences and impactful digital strategies. Whether
+          you need a high-performance website, targeted marketing campaigns
+        </p>
+        <a
+          href="/login"
+          class="btn mt-8 w-fit px-4 py-2 rounded-lg capitalize font-bold bg-primary-white text-primary-gray cursor-pointer dark:bg-primary-gray dark:text-primary-white"
+        >
+          get started
+        </a>
+      </div>
+      <div class="w-full flex">
+        <img
+          src="https://evilmartians.com/static/f792e42e6784c3a9d0f22b7992151a36/ccd24/cover.webp"
+          alt="banner"
+          class="w-[400px] m-auto h-auto object-contain rounded transform scale-125 origin-top-right rotate-12 mr-4"
+        />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  #text {
+    text-wrap: balance;
+  }
+</style>

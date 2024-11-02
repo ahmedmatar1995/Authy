@@ -1,0 +1,22 @@
+---
+import { Moon, Sun  } from "lucide-astro"
+---
+
+
+<div class="w-full h-[80px]">
+    <div class="navbar w-full h-full px-12">
+        <div class="navbar-start">
+            <h1 class="text-2xl dark:text-primary-dark font-extrabold capitalize text-primary-white motion-preset-flomoji-🚀">QuickCode</h1>
+        </div>
+        <div class="navbar-end">
+            <button id="toggleMode" class="btn btn-ghost text-primary-white dark:text-primary-dark">
+                <Sun />
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script is:inline>
+    toggleMode.addEventListener("click", () => document.documentElement.classList.toggle('dark'))
+</script>
